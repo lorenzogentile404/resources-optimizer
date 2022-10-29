@@ -8,9 +8,9 @@ R = [r for r in range(1, k + 1)] # Set of resources
 
 # W = [random.randint(1, 10) for r in range(1, k + 1)] # Weights for each resource
 
-n = 50 # Number of rows in the matrix of resources
+n = 10 # Number of rows in the matrix of resources
 
-m = 50 # Number of colums in the matrix of resources
+m = 30 # Number of colums in the matrix of resources
 
 M = [[random.randint(0, k) 
       for j in range(0, m)] 
@@ -57,25 +57,23 @@ S4 = [[1/(1 + np.average([d1(i, j, r, M) for r in R ]))
          for i in range(0, n)]
 
 # Visualize resources and scores
-plt.title('Heats maps of resources and scores')
-
-plt.subplot(3,2,1)
+plt.subplot(3,2,1, aspect='equal')
 plt.pcolormesh(M, cmap = 'rainbow')
 plt.title('Resources')
  
-plt.subplot(3,2,2)
+plt.subplot(3,2,2, aspect='equal')
 plt.pcolormesh(S1, cmap = 'summer')
 plt.title('Score Sum dMinToR')
  
-plt.subplot(3,2,3)
+plt.subplot(3,2,3, aspect='equal')
 plt.pcolormesh(S2, cmap = 'summer')
 plt.title('Score Sum dAvgToR')
 
-plt.subplot(3,2,4)
+plt.subplot(3,2,4, aspect='equal')
 plt.pcolormesh(S3, cmap = 'summer')
 plt.title('Score Max dMinToR')
 
-plt.subplot(3,2,5)
+plt.subplot(3,2,5, aspect='equal')
 plt.pcolormesh(S4, cmap = 'summer')
 plt.title('Score Avg dMinToR')
 

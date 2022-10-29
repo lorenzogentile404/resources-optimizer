@@ -10,3 +10,4 @@ $$s_{ij} = \frac{1}{1+ f_a(\\{d(i,j,r)_{r \in R}\\})}$$
 
 Here is an example of visualization of the output of the script with $k = 3$ and $n = m = 50$ (see comments in the code to see definitions of the metrics) and $M$ generated uniformly at random (*i.e.*, each possible value of $m_{ij}$ is equally likely):
 
+![Example of output](https://raw.githubusercontent.com/lorenzogentile404/resources-optimizer/main/resourceOptimizerOutput.png)

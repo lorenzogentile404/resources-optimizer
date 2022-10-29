@@ -8,7 +8,7 @@ $$s_{ij} = \frac{1}{1+ f_a(\\{d(i,j,r)_{r \in R}\\})}$$
 
 , where $f_a$ is an aggregation function (*e.g.*, sum) and $d(i,j,r)$ is a certain notion of distance between position $(i,j)$ and resource $r$ (*e.g.*, the distance between $(i,j)$ and the closest $r$), thus $\\{d(i,j,r)_{r \in R}\\}$ represents the set of those distances with respect to $r \in R$.
 
-Here is an example of visualization of the output of the script with $k = 3$ and $n = m = 50$ (see comments in the code to see definitions of the metrics) and $M$ generated uniformly at random (*i.e.*, each possible value of $m_{ij}$ is equally likely):
+Here is an example of visualization of the output of the script with $k = 3$ and $n = 10$, $m = 30$ (see comments in the code to see definitions of the metrics) and $M$ generated uniformly at random (*i.e.*, each possible value of $m_{ij}$ is equally likely):
 
 <p align="center">
     <img width="900" src="https://raw.githubusercontent.com/lorenzogentile404/resources-optimizer/main/resourceOptimizerOutput.png" alt="Material Bread logo">
